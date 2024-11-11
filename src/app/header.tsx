@@ -15,6 +15,7 @@ import Image from "next/image";
 import NextLink from "next/link";
 import { useState } from "react";
 import risuIcon from "../../public/risu.png";
+import { memo } from 'react'
 
 const navigationItems = ["home", "about", "works", "social"];
 
@@ -129,4 +130,4 @@ const Header = () => {
 	);
 };
 
-export default Header;
+export default memo(Header);
